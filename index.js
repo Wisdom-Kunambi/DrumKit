@@ -71,3 +71,29 @@ function handleClick() {
 
 // console.log(operate('multiply', 1, 2));
 
+
+// let newHouseKeeper = {
+//     name: 'Vaina',
+//     age: 30,
+//     gender: 'female',
+//     salary: 30000,
+//     houseKeeper: true
+// }
+
+// console.log(newHouseKeeper);
+
+
+function MemberUser(name, age, gender, salary, houseKeeper) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.salary = salary;
+    this.houseKeeper = houseKeeper;
+    this.clean = function () {
+        alert("She cleans the house");
+    }
+}
+
+let newHouseKeeper = new MemberUser('Vaina', 30, 'female', 30000, true);
+console.log(newHouseKeeper.name);
+console.log(newHouseKeeper.clean());
